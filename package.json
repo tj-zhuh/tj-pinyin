@@ -1,0 +1,30 @@
+{
+  "name": "tj-pinyin",
+  "version": "0.1.0",
+  "description": "返回中文汉字的拼音，内置一个大小为25.6kb的词典",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rimraf ./index.js",
+    "build": "npm run clean && webpack",    
+    "prepublish": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhizao/tj-pinyin.git"
+  },
+  "files": [ "index.js" ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zhizao/tj-pinyin/issues"
+  },
+  "homepage": "https://github.com/zhizao/tj-pinyin#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "rimraf": "^2.6.2",
+    "webpack": "^3.10.0"
+  }
+}
